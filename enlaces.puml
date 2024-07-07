@@ -1,0 +1,21 @@
+@startuml enlaces
+
+[*] --> REGISTROS
+REGISTROS : RUTA DE LOS ENLACES
+
+
+state ENLACES{
+
+REGISTRO : ESTUDIANTES
+REGISTRO : PROFESORES
+CONSULTAS: MIXTA
+
+
+}
+
+REGISTROS --> ENLACES: Se dirige a las paginas
+ENLACES --> INSCRIPCION
+
+INSCRIPCION -->[*]
+
+@enduml
